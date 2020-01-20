@@ -1,0 +1,54 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+  // Place your key bindings in this file to overwrite the defauls
+  { "key": "ctrl+shift+j", "command": "workbench.action.terminal.focusNext" },
+  { "key": "ctrl+shift+k", "command": "workbench.action.terminal.focusPrevious" },
+  { "key": "ctrl+shift+t", "command": "workbench.action.terminal.newInActiveWorkspace" },
+  { "key": "ctrl+shift+w", "command": "workbench.action.terminal.kill" },
+  { "key": "ctrl+shift+enter", "command": "workbench.action.terminal.focus" },
+  {
+    "key": "ctrl+shift+enter",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+tab",
+    "command": "workbench.action.nextEditor"
+  },
+  {
+    "key": "ctrl+pagedown",
+    "command": "-workbench.action.nextEditor"
+  },
+  {
+    "key": "ctrl+shift+tab",
+    "command": "workbench.action.previousEditor"
+  },
+  {
+    "key": "ctrl+pageup",
+    "command": "-workbench.action.previousEditor"
+  },
+  //新規ファイル・フォルダ 作成
+  { "key": "ctrl+n",
+    "command": "explorer.newFile",
+  },
+  { "key": "ctrl+m",
+    "command": "explorer.newFolder" 
+  },
+  //タブ削除
+  { "key": "ctrl+w",
+    "command": "workbench.action.closeActiveEditor",
+    "when": "editorTextFocus && !inDebugRepl && vim.mode != 'Insert'" 
+  },
+  //拡張子の設定
+  { "key": "ctrl+k ctrl+m",
+    "command": "workbench.action.editor.changeLanguageMode"
+  },
+  //markdown preview表示(別タブ)
+  { "key": "ctrl+k ctrl+v",
+    "command": "markdown.showPreviewToSide"
+  },
+  //vsnotes
+  { "key": "ctrl+shift+v",
+    "command": "workbench.view.extension.vsnotes" 
+  }
+]
